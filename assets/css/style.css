@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+    min-height: 407px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding-left: -12px;
+    padding-right: -12px;
+}
+
+.background-white {
+    width: 50%;
+    min-height: 100vh;
+    background-image: url('./../images/Sign-in-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    padding: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: rgba(3, 7, 18, 1);
+}
+
+.para {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(98, 101, 109, 1);
+}
+
+span {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(37, 99, 235, 1);
+    cursor: pointer;
+}
+
+.sign-in-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remember-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.email-box {
+    position: relative;
+    width: 100%;
+}
+
+.email-box input {
+    width: 100%;
+    padding: 10px 12px 10px 40px;
+    font-size: 14px;
+    border: 1px solid rgba(228, 234, 247, 1);
+    height: 44px;
+    gap: 10px;
+    border-radius: 6px;
+    background-color: rgba(245, 248, 255, 1);
+}
+
+.email-box .e-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.password-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 10px 12px 10px 40px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: rgba(245, 248, 255, 1);
+    gap: 10px;
+    border: 1px solid rgba(228, 234, 247, 1);
+    height: 44px;
+}
+
+.password-box .p-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.password-box .eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.remember-me {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(98, 101, 109, 1);
+}
+
+.forgot {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgba(98, 101, 109, 1);
+}
+
+.sign-in-button {
+    max-width: 340px;
+    height: 48px;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 50px;
+    padding-top: 14px;
+    padding-right: 32px;
+    padding-bottom: 14px;
+    padding-left: 32px;
+    background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #C9CFDB;
+}
+
+.divider:not(:empty)::before {
+    margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: 0.75em;
+}
+
+.continue {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgba(145, 151, 166, 1);
+}
+
+.google {
+    width: 166px;
+    height: 41px;
+    opacity: 1;
+    border-width: 1px;
+    gap: 10px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(228, 234, 247, 1);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(98, 101, 109, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook {
+    width: 166px;
+    height: 41px;
+    opacity: 1;
+    border-width: 1px;
+    gap: 10px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(228, 234, 247, 1);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(98, 101, 109, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-f-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.background-blue {
+    width: 50%;
+    min-height: 100vh;
+    background: url(./../images/image.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.circle-gradient {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    left: 50%;
+    transform: translatex(-50%);
+
+}
+
+.icon-flex-box {
+    z-index: 4;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    top: 9%;
+    left: 2%;
+}
+
+.left-side {
+    position: relative;
+    min-height: 500px;
+    width: 500px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.circle-bg {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-gradient {
+    z-index: 3;
+    position: absolute;
+    left: 12%;
+}
+
+.insta-img {
+    z-index: 4;
+    position: absolute;
+    right: 0;
+}
+
+.circle {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    border-radius: 500px;
+    background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
+    z-index: 1;
+}
+
+.group {
+    z-index: 2;
+    position: absolute;
+}
+
+@media(max-width:991.98px) {
+    .background-blue {
+        width: 100%;
+    }
+
+    .background-white {
+        width: 100%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:576px) {
+    .circle-gradient {
+        width: 100%;
+    }
+
+    .left-side {
+        width: 90%;
+        clear: both;
+        overflow: hidden;
+
+    }
+
+    .icon-flex-box {
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+        justify-content: space-between;
+        bottom: 0%;
+        align-items: end;
+        left: 0;
+        max-width: 500px;
+    }
+
+    .circle-bg {
+        width: 100%;
+    }
+
+    .line-gradient {
+        display: none;
+    }
+
+    .insta-img {
+        right: auto;
+    }
+
+}
