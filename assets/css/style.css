@@ -196,6 +196,7 @@ span {
     vertical-align: middle;
     color: rgba(255, 255, 255, 1);
     border: none;
+    cursor: pointer;
 }
 
 .divider {
@@ -256,6 +257,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .facebook {
@@ -281,6 +283,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .g-f-buttons {
@@ -327,8 +330,8 @@ span {
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    top: 9%;
+    gap: 25px;
+    top: 11%;
     left: 2%;
 }
 
@@ -376,6 +379,9 @@ span {
 .group {
     z-index: 2;
     position: absolute;
+}
+.facebook-i,.linked-in,.instagram,.twitter{
+    cursor: pointer;
 }
 
 @media(max-width:991.98px) {
@@ -426,6 +432,12 @@ span {
 
     .insta-img {
         right: auto;
+    }
+    .heading{
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 89px;
+        padding-bottom: 89px;
     }
 
 }
